@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+        <header class="header">
+            <h1 id="title" class="title">
+                Survey Form
+            </h1>
+        </header>
+
+        <main class="main">
+		<p class="description" id="description">
+       <i>Create Your Survey</i> 
+		</p>
+		<form id="survey-form">
+
+			<div class="row">
+				<label for="name" id="name-label">Your full name*</label>
+				<input type="text" name="name" id="name" placeholder="Write your email" required>
+			</div>
+
+			<div class="row">
+				<label for="email" id="email-label">Your email*</label>
+				<input type="email" name="email" id="email" placeholder="Write your email" required>
+			</div>
+
+			<div class="row">
+				<label for="number" id="number-label">Your age:</label>
+				<input type="number" name="number" id="number" min="0" max="130" placeholder="Your age">
+			</div>
+
+			<div class="row">
+				<label for="dropdown">Which option best describes your current role?</label>
+				<select name="dropdown" id="dropdown">
+					<option value="" disabled>Select an option</option>
+					<option value="student">Student</option>
+					<option value="full-time">Full-time job</option>
+					<option value="part-time">Part-time job</option>
+					<option value="unemployed">Unemployed</option>
+					<option value="no-answer">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+
+			<div class="row">
+
+				<label for="dropdown2">What do you like most in FCC:</label>
+
+				<select name="dropdown2" id="dropdown2">
+					<option value="" disabled>Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="open-source">Open Source</option>
+				</select>
+
+			</div>
+    
+
+<div class="row">
+
+    <label for="textarea">Any comments or suggestions?</label>
+    <textarea type="text" name="textarea" id="textarea" rows="5"></textarea>
+
+</div>
+
+<button type="submit" id="submit">Submit</button>
+
+<footer class="footer">
+    <p class="copyright">Written and coded by
+        <a href="#"">Iftekhar Mehedi</a>
+    </p>
+</footer>
+
+
+</body>
+</html>
